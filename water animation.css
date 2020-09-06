@@ -1,0 +1,43 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #000;
+
+}
+.content h2{
+
+	position: absolute;
+	color: white;
+	transform: translate(-50%,-50%);
+	font-size: 20em;
+}
+
+.content h2:nth-child(1){
+	color: transparent; /*for coloring inside text */
+	-webkit-text-stroke: 2px #03a9f4;/* for border text sizing and coloring*/ 
+}
+
+.content h2:nth-child(2){
+	color: #03a9f4;
+	animation: amit 2s ease-in-out infinite;
+
+}
+
+@keyframes amit {
+	 0%,100%{
+	 	clip-path: polygon(1% 50%, 14% 51%, 27% 59%, 42% 67%, 58% 65%, 75% 61%, 88% 54%, 100% 55%, 99% 100%, 0% 100%);
+
+	 }
+
+	 50%{
+	 	clip-path: polygon(0% 65%, 11% 69%, 29% 74%, 44% 72%, 61% 65%, 77% 58%, 89% 50%, 100% 48%, 100% 99%, 0% 99%);
+
+	 }
+}
