@@ -25,7 +25,7 @@ body{
 }
 
 .content h2:nth-child(2){
-	color: #03a9f4;
+	color: red;
 	animation: amit 2s ease-in-out infinite;
 
 }
